@@ -53,6 +53,37 @@ npm start
 
 Servidor ficará acessível em: http://localhost:5000
 
+### 🐳 Executando com Docker
+
+Build da imagem:
+```powershell
+docker build -t trainops:latest .
+```
+
+Rodar container simples:
+```powershell
+docker run --name trainops -p 5000:5000 trainops:latest
+```
+
+Usando docker-compose (hot reload de código via volume):
+```powershell
+docker compose up --build
+```
+
+Parar:
+```powershell
+docker compose down
+```
+
+Rebuild sem cache:
+```powershell
+docker compose build --no-cache
+```
+
+Notas:
+- As alterações no código local refletem no container (volume montado) exceto dependências.
+- Para instalar um novo pacote: editar `package.json` e rodar dentro do container ou localmente e reconstruir.
+
 ## 🔗 Rotas Principais
 
 Instructors:
@@ -125,4 +156,3 @@ Projeto de estudo — adapte livremente.
 Abra uma issue ou continue a conversa indicando o próximo passo desejado (ex: adicionar validação, migrar para banco, criar testes, etc.).
 
 ---
-Se quiser, posso já criar um `.gitignore` e comandos prontos para publicar no GitHub. É só pedir.
