@@ -8,6 +8,7 @@ const express = require("express");
 const nunjucks = require("nunjucks");
 const routes = require("./routes");
 const methodOverride = require('method-override')
+const pkg = require('./package.json') // Usado para expor versão na rota /health
 const server = express();
 
 
@@ -16,6 +17,16 @@ server.use(express.urlencoded({ extended: true })); // Faz o parse de bodies de 
 server.use(express.static("public")); // Servir arquivos estáticos (CSS, JS, imagens)
 server.use(methodOverride('_method')) // Permite usar ?_method=PUT / DELETE em formulários HTML
 server.use(routes); // Registra as rotas definidas em routes.js
+
+// Rota de health check (simples para monitoramento / Docker / uptime bots)
+server.get('/health', (req, res) => {
+  return res.json({
+    status: 'ok',
+    uptime: Number(process.uptime().toFixed(2)),
+    timestamp: Date.now(),
+    version: pkg.version
+  })
+})
 
 server.set("view engine", "njk");
 
