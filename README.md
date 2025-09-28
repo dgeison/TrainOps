@@ -84,6 +84,21 @@ Notas:
 - As alterações no código local refletem no container (volume montado) exceto dependências.
 - Para instalar um novo pacote: editar `package.json` e rodar dentro do container ou localmente e reconstruir.
 
+### 🌱 Seed / Reset de Dados
+
+Scripts disponíveis:
+```powershell
+npm run seed        # Adiciona registros de exemplo sem apagar os existentes
+npm run seed:reset  # Substitui completamente o data.json por dados de exemplo
+```
+Exemplo de uso comum após clonar:
+```powershell
+npm install
+npm run seed:reset
+npm start
+```
+Os IDs são recalculados para evitar colisões quando em modo append.
+
 ## 🔗 Rotas Principais
 
 Instructors:

@@ -8,7 +8,9 @@
     "dev": "nodemon server.js",
     "serve": "node server.js",
     "nodemon": "nodemon server.js",
-    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
+    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'",
+    "seed": "node scripts/seed.js",
+    "seed:reset": "node scripts/seed.js --reset"
   },
   "repository": {
     "type": "git",
