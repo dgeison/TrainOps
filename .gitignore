@@ -1,0 +1,36 @@
+############################################
+# Node / TrainOps Git Ignore
+############################################
+
+# Dependências
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Sistema operacional / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Ambiente
+.env
+.env.local
+
+# Cobertura / build / cache
+coverage/
+.cache/
+.tmp/
+dist/
+build/
+
+# Outros
+*.pid
+*.seed
+*.tgz

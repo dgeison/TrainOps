@@ -1,0 +1,44 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "avatar_URL": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+      "name": "Dgeison Peixoto",
+      "email": "brunomottacosta@gmail.com",
+      "birth": 1613692800000,
+      "gender": "M",
+      "blood": "A+",
+      "weight": "76",
+      "height": "131"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 2,
+      "avatar_URL": "https://images.unsplash.com/photo-1584863371502-048abf845b07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Iara Motta",
+      "birth": 1613692800000,
+      "gender": "F",
+      "services": "Musculação",
+      "created_at": 1613781693951
+    },
+    {
+      "id": 3,
+      "avatar_URL": "https://images.unsplash.com/photo-1584863371502-048abf845b07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Izadora Motta",
+      "birth": 1612396800000,
+      "gender": "M",
+      "services": "Musculação, Crossfit, Natação",
+      "created_at": 1613781799561
+    },
+    {
+      "id": 4,
+      "avatar_URL": "https://images.unsplash.com/photo-1584863371502-048abf845b07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Izadora Motta",
+      "birth": 1612396800000,
+      "gender": "M",
+      "services": "Musculação, Crossfit, Natação",
+      "created_at": 1613781887293
+    }
+  ]
+}
